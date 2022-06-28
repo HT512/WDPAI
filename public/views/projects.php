@@ -1,48 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="public/css/login.css">
-    <script type="text/javascript" src="./public/js/script.js" defer></script>
-    <title>Rejestracja</title>
+    <meta charset="utf-8"/>
+    <title>Wypożyczalnia filmowa</title>
+    <link rel="stylesheet" type="text/css" href="public/css/index.css">
 </head>
-
 <body>
-<div class="container">
 
-    <div class="logo-container">
-        <img class="logo" src="public/img/cineman.png">
+<div id="Nav">
+    <div id="NavItem2"><p>Filmy i Seriale Premium</p></div>
+    <div id="NavItem"><p>Filmy</p></div>
+    <div id="NavItem"><p>Seriale</p></div>
+</div>
+<div id="Baner">
+    <img src="cineman.png"/>
+    <div id="Menu">
+        <img id="ObrazekMenu" src="white_star.png"/>
+        <div id="TekstMenu">Wykup subskrupcje</div>
     </div>
-
-    <div class="login-container">
-        <div class="message">
-            <span id="hello">Witaj nowy użytkowniku</span>
-            <span id="hello2">Nim zaczniemy musimy wiedzieć kim jesteś</span>
+    <div id="Menu">
+        <img id="ObrazekMenuTime" src="time.png"/>
+        <div id="TekstMenu">Historia oglądania</div>
+    </div>
+    <div id="Menu">
+        <img id="ObrazekMenu" src="heart.png"/>
+        <div id="TekstMenu">Ulubione</div>
+    </div>
+    <div id="Menu">
+        <img id="ObrazekMenuGear" src="gear.png"/>
+        <div id="TekstMenu">Ustawienia konta</div>
+    </div>
+    <div id="MenuLogout">
+        <img id="ObrazekMenuLogout" src="logout.png"/>
+        <div id="TekstMenu2">Wyloguj</div>
+    </div>
+</div>
+<div id="Content"><h2>To może cię zainteresować</h2>
+    <div id="margin">
+        <div id="Najczęściej"><h1>Najczęściej oglądane filmy</h1>
+            <div id="Most"><img src="thor.jpg" id="Movie">
+                <img src="suicide.jpg" id="Movie2" ></div>
         </div>
-        <form method="POST" action="register">
-            <input name="email" type="text" placeholder="Adres email">
-            <input name="name" type="text" placeholder="Pseudonim">
-            <input name="password" type="password" placeholder="Hasło">
-            <input name="confirmedPassword" type="password" placeholder="Powtórz Hasło">
-            <button id="login-button" type="submit">Zarejestruj</button>
-            <span id="bottom-text">Jeżeli masz już konto, kliknij tutaj -> <a href="/login">Logowanie</a></span>
-            <div class="messages">
-                <?php if (isset($messages)) {
-                    foreach ($messages as $message) {
-                        echo $message;
-                    }
-                }
-                ?>
+        <div id="Najpopularniejsze"><h1>Najpopularniejsze seriale</h1>
+            <div id="Most2"><img src="bridgerton.jpg" id="Popular">
+                <img src="Dynasty.jpg" id="Popular2" ></div>
+        </div>
+        <div id="Top"><h1>Top 1 miesiąca</h1>
+            <div id="Most"><img src="Lucifer.jpg" id="Movie3">
             </div>
-        </form>
-
+        </div>
+        <div id="Popularne"><h1>Popularne wśród młodszej widowni</h1>
+            <div id="Most2"><img src="dora.jpg" id="Movie4">
+            </div>
+        </div>
     </div>
+
+
 
 </div>
 
-</body>
 
+</body>
 </html>
