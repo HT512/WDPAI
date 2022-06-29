@@ -12,7 +12,7 @@
 <div class="profile"><h5>Nick: <?php echo($data[0]->getNick()) ?></h2>
     <div id="margin">
         <p class="email" >Email: <?php echo($data[0]->getEmail()) ?> </p>
-        <p class="points" > Twoje punkty:  <?php echo($data[0]->getPoints()) ?> </p>
+        <p class="o" > Twoje punkty:  <?php echo($data[0]->getPoints()) ?> </p>
     </div>
 
 

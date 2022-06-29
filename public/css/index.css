@@ -218,16 +218,14 @@ h2{
     padding:0.8em;
 }
 .points{
-    position:absolute;
-    width:30%;
+   
+    width:50%;
     background-color:black;
-    height:7em;
-    margin:0 auto;
-    padding:0 auto;
-    left:50em;
-    top:10em;
     border-radius:20px;
     text-align:center;
+    padding:2em;
+    margin: 0 auto;
+
 
 }
 .ps{
@@ -242,6 +240,7 @@ h2{
     
    
 }
+
 
 .submit {
   

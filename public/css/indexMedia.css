@@ -43,5 +43,10 @@
     .Baner img{
         display: none;
     }
+    .submit{
+        width: 100%;
+        background-color:green;
+        font-size:0.5em;
+    }
    
 }
