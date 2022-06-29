@@ -23,7 +23,52 @@ class UserRepository extends Repository
         return new User(
             $user['email'],
             $user['password'],
-            $user['nick']
+            $user['nick'],
+            $user['UserId'],
+            $user['points'],
+            $user['admin']
         );
     }
+    public function addUser(User $user)
+    {
+        $stmt = $this->database->connect()->prepare('
+            INSERT INTO users (email, password, nick, points)
+            VALUES (?, ?, ?, ?)
+        ');
+
+        $stmt->execute([
+            $user->getEmail(),
+            $user->getPassword(),
+            $user->getNick(),
+            0
+        ]);
+    }
+
+    public function updatePoints(User $user)
+    {
+        $stmt = $this->database->connect()->prepare('
+            UPDATE users
+            SET points = (?)
+            WHERE email = (?)
+        ');
+
+        $stmt->execute([
+            $user->getPoints(),
+            $user->getEmail()
+        ]);
+    }
+
+    public function buyMovie(int $user, int $movie)
+    {
+        $stmt = $this->database->connect()->prepare('
+            INSERT INTO user_movies (userid, movieid)
+            VALUES (?, ?)
+        ');
+
+        $stmt->execute([
+            $user,
+            $movie
+        ]);
+    }
+
 }

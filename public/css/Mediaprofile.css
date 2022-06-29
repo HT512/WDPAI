@@ -1,0 +1,52 @@
+
+
+@media only screen and (max-width: 550px) {
+
+    body{
+        background-color: #009ffd;
+        background-image: none;
+    }
+
+    .Baner{
+        flex-direction: row;
+        margin-top: 1em;
+        float: none;
+        height: auto;
+        background-image: none;
+    }
+
+
+    #Nav{
+        display: none;
+    }
+
+    .Menu img{
+        display: none;
+    }
+
+    .TekstMenu{
+        font-size: 1em;
+        border: 0;
+    }
+
+    #Content{
+        width:75%;
+        margin: 2em;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-right{
+        margin-top: 1em;
+        width: 50%;
+    }
+    .Baner img{
+        display: none;
+    }
+    .profile{
+        width:100%;
+        margin:0;
+        margin-top:2em;
+        padding:0.8em;
+    }
+}

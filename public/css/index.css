@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: linear-gradient( #009ffd,#2a2a72);
+    background-image: linear-gradient( #009ffd,#2a2a73);
     margin:0;
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,6 +26,7 @@ body {
     float:right;
 
 
+
 }
 #NavItem{
     background-color:#DC143C;
@@ -41,7 +42,7 @@ body {
 
 
 }
-p {
+#NavItem ,#NavItem2 {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -52,13 +53,29 @@ p {
     font-size:150%;
     color:white;
 }
-#Baner{
+.margin2{
+
+    text-align:center;
+    background-color:rgba(0,0,0,.5);
+    height:25%;
+    width:100%;
+    font-size:1.5em;
+    color:white;
+    position:absolute;
+    text-align:center;
+    bottom:0;
+   
+
+}
+.Baner{
     width:20%;
     height:100vh;
     background-color:pink;
     background-image: linear-gradient( #009ffd,#2a2a72);
     margin:0;
     float:left;
+    display: flex;
+    flex-direction: column;
     margin-top:-5em;
 }
 img{
@@ -72,35 +89,34 @@ img{
     width:15%;
     position:absoulte;
     margin-left:5%;
-    float:left;
 
 }
 #TekstMenu{
-
-    position:absolute;
-    float:left;
-    width:70%;
-    margin-left:35%;
-    display:flex;
     justify-content: center;
     align-items: center;
     height:120%;
     color:white;
-    font-size:1.3vw;
-    border:2px solid white;
-    margin-top:2.5%;
-    border-radius:50px;
+    font-size:1em;
+    margin-top:1em;
     text-align:center;
     font-weight: bold;
-
 }
+
 #Menu{
 
-    width:80%;
-    margin-left:10%;
-    margin-top:10%;
+    width:60%;
+    margin: 1em;
     height:5%;
     position:relative;
+}
+a{
+    text-decoration:none;
+    color:white;
+
+}
+
+#Content a{
+    font-size:3em;
 }
 #MenuLogout{
     width:80%;
@@ -108,6 +124,7 @@ img{
     height:5%;
     position:relative;
     margin-top:20em;
+
 
 }
 #ObrazekMenuTime{
@@ -133,131 +150,155 @@ img{
     float:left;
     margin-top:20%;
 }
-#TekstMenu2{
-
-    position:absolute;
-    float:left;
-    width:70%;
-    margin-left:35%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height:120%;
-    color:white;
-    font-size:1.3vw;
-    border:2px solid white;
-    margin-top:20%;
-    border-radius:50px;
+#Content{
+    width:75%;
+    margin: 2em;
+    display: flex;
+}
+h1, h2{
     text-align:center;
-    font-weight: bold;
+    color:white;
+}
+h2{
+    font-size:3em;
+}
+
+.main-left{
+    width: 60%;
+}
+
+.movie img{
+    margin: 0;
+    padding: 0;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:5em;
+}
+
+.movie-name{
+    background-color: transparent;
+    font-size: .6em;
+    text-align:center;
 
 }
-#Content{
 
+.main-right{
+    width: 19%;
+    color:white;
+}
+
+.main-right h3{
+    font-size: 2.5em;
+}
+
+.main-right li{
+    font-size: .5em;
+}
+.Mov{
     width:75%;
-    height:45em;
+    height:40em;
     float:left;
     margin-top:2.5%;
     margin-left:2.5%;
+    position:relative;
+    background-size:cover;
 }
-h1{
+.profile{
     text-align:center;
     color:white;
-}
-#Najczęściej{
-    height:20em;
-    width:45%;
-    margin-left:4vw;
-    float:left;
-}
-#Najpopularniejsze{
-    height:20em;
-    width:45%;
-    float:left;
-}
-#Top{
-
-    height:20em;
-    width:45%;
-    float:left;
-    margin-left:4vw;
-}
-#Popularne{
-
-    height:20em;
-    width:45%;
-    float:left;
-
-}
-#Movie{
-    margin:0;
-    padding:0;
-    width:8vw;
-    height:23vh;
-    float:left;
+    font-size:2em;
+    height:15%;
+    width:40%;
     position:absolute;
-
-
+    margin-top:15%;
+    margin-left:40%;
+    background-color:black;
+    border-radius:25px;
+    padding:0.8em;
 }
-#Movie2{
-    margin:0;
-    padding:0;
-    width:8vw;
-    height:23vh;
-    margin-left:15%;
-    float:left;
+.points{
     position:absolute;
-
-}
-#Most{
-    width:100%;
-    height:20em;
-    margin-left:17%;
-}
-
-#Popular{
-    width:13vw;
-    height:11vh;
-    display:flex;
-    justify-content: center;
+    width:30%;
+    background-color:black;
+    height:7em;
     margin:0 auto;
-}
-#Popular2{
-    width:13vw;
-    height:11vh;
-    display:flex;
-    justify-content: center;
-    margin:0 auto;
-    margin-top:2%;
-}
-#Movie3{
-
-    width:23vw;
-    height:23vh;
-    display:flex;
-    justify-content: center;
-    margin:0 auto;
-    margin-left:0
-}
-#margin{
-    margin-top:1.5%;
-}
-h2{
+    padding:0 auto;
+    left:50em;
+    top:10em;
+    border-radius:20px;
     text-align:center;
-    color:white;
+
+}
+.ps{
     font-size:3em;
+    color:white;
+    text-align:center;
+    
 }
-#Movie4{
-
-    width:30vw;
-    height:23vh;
-    display:flex;
-    justify-content: center;
-    margin:0 auto;
-
+#in{
+    width:10em;
+    height:3em;
+    
+   
 }
-#Most2{
-    width:100%;
-    height:20em;
 
+.submit {
+  
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 30%;
+}
+
+.submit:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.submit:main,
+.submit:focus {
+  user-select: auto;
+}
+
+.submit:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.submit:disabled {
+  cursor: auto;
 }

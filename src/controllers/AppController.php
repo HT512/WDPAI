@@ -32,4 +32,12 @@ class AppController {
         }
         print $output;
     }
+
+    protected function isLogged()
+    {
+        if(!isset($_SESSION["logged"]) || $_SESSION["logged"]==0){
+            $this->render('login');
+            exit();
+        }
+    }
 }
