@@ -41,7 +41,7 @@ body {
 
 
 }
-p {
+#NavItem ,#NavItem2 {
     display:flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +52,7 @@ p {
     font-size:150%;
     color:white;
 }
+
 #Baner{
     width:20%;
     height:100vh;
@@ -92,6 +93,7 @@ img{
     border-radius:50px;
     text-align:center;
     font-weight: bold;
+
 
 }
 #Menu{
@@ -155,10 +157,14 @@ img{
 #Content{
 
     width:75%;
-    height:45em;
+    height:40em;
     float:left;
     margin-top:2.5%;
     margin-left:2.5%;
+    background-image:url("../img/fast_and_furious.jpg");
+    position:relative;
+
+
 }
 h1{
     text-align:center;
@@ -239,8 +245,30 @@ h1{
     margin:0 auto;
     margin-left:0
 }
+#margin2{
+
+
+    text-align:center;
+    background-color:rgba(0,0,0,.5);
+    height:28%;
+    width:100%;
+    font-size:1.5em;
+    color:white;
+    position:absolute;
+    text-align:center;
+    bottom:0;
+
+}
 #margin{
     margin-top:1.5%;
+}
+#Content2{
+
+    width:75%;
+    height:45em;
+    float:left;
+    margin-top:2.5%;
+    margin-left:2.5%;
 }
 h2{
     text-align:center;
@@ -260,4 +288,11 @@ h2{
     width:100%;
     height:20em;
 
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+.movie-name{
+    text-align:center;
 }

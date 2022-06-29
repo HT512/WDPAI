@@ -1,3 +1,9 @@
+<?php
+if(isset($_SESSION["logged"]) && $_SESSION["logged"]==1){
+    header("Location: {$url}/projects");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +28,7 @@
             <span id="hello">Witaj nowy użytkowniku</span>
             <span id="hello2">Nim zaczniemy musimy wiedzieć kim jesteś</span>
         </div>
-        <form method="POST" action="register">
+        <form method="POST" action="reg">
             <input name="email" type="text" placeholder="Adres email">
             <input name="name" type="text" placeholder="Pseudonim">
             <input name="password" type="password" placeholder="Hasło">

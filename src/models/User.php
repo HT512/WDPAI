@@ -5,13 +5,16 @@ class User
     private $email;
     private $password;
     private $nick;
+    private $points;
+    private $isAdmin;
 
-
-    public function __construct(string $email,string $password,string $nick)
+    public function __construct(string $email,string $password,string $nick, int $points=0, bool $isAdmin=false)
     {
         $this->email = $email;
         $this->password = $password;
         $this->nick = $nick;
+        $this->points = $points;
+        $this->isAdmin = $isAdmin;
     }
 
 
@@ -48,5 +51,34 @@ class User
     {
         $this->nick = $nick;
     }
+
+    public function getPoints(): int
+    {
+        return $this->points;
+    }
+
+
+    public function setPoints(int $nick)
+    {
+        $this->nick = points;
+    }
+
+    /**
+     * @return bool
+     */
+    public function isAdmin(): bool
+    {
+        return $this->isAdmin;
+    }
+
+    /**
+     * @param bool $isAdmin
+     */
+    public function setIsAdmin(bool $isAdmin): void
+    {
+        $this->isAdmin = $isAdmin;
+    }
+
+
 
 }
