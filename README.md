@@ -40,7 +40,16 @@ List the ready features here:
 - Display films
 - Display points
 
-## Screenshots
+## Basic Routing
+
+1. /login -> Main page (user don't acces if not log in)
+2. /projects -> page with films
+3. /profile -> basic information about user
+4. /points -> page to add points to account
+5. /movie/{id} -> page about movie information 
+6. /admin -> page inform about user priviligies
+
+
 
 ## Setup
 1. You have to install Docker for running this app -> [link](https://www.docker.com/get-started);
